@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+// Fungsi void untuk menampilkan pesan
+void tampilkan_pesan() {
+    cout << "Halo, selamat datang!" << endl;
+}
+
+// Fungsi void untuk mencetak angka
+void cetak_angka(int angka) {
+    cout << "Angka: " << angka << endl;
+}
+
+// Fungsi void untuk mengganti nilai variabel
+void ubah_nilai(int &angka) {
+    angka = angka * 2;
+}
+
+int main() {
+    // Memanggil fungsi void tampilkan_pesan
+    tampilkan_pesan();
+
+    // Memanggil fungsi void cetak_angka
+    int x = 5;
+    cetak_angka(x);
+
+    // Memanggil fungsi void ubah_nilai
+    int y = 10;
+    cout << "Nilai awal: " << y << endl;
+    ubah_nilai(y);
+    cout << "Nilai setelah diubah: " << y << endl;
+
+    return 0;
+}
